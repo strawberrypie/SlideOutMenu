@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2B205FA11A7306F3001D4D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B205FA01A7306F3001D4D09 /* AppDelegate.swift */; };
-		2B205FA31A7306F3001D4D09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B205FA21A7306F3001D4D09 /* ViewController.swift */; };
 		2B205FA61A7306F3001D4D09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B205FA41A7306F3001D4D09 /* Main.storyboard */; };
 		2B205FA81A7306F3001D4D09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B205FA71A7306F3001D4D09 /* Images.xcassets */; };
 		2B205FAB1A7306F3001D4D09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B205FA91A7306F3001D4D09 /* LaunchScreen.xib */; };
 		2B205FB71A7306F3001D4D09 /* SlideOutMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B205FB61A7306F3001D4D09 /* SlideOutMenuTests.swift */; };
+		2B205FC11A7308C1001D4D09 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B205FC01A7308C1001D4D09 /* ContainerViewController.swift */; };
+		2B205FC31A730B9C001D4D09 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B205FC21A730B9C001D4D09 /* LeftViewController.swift */; };
+		2B205FC51A7316C3001D4D09 /* SchemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B205FC41A7316C3001D4D09 /* SchemaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		2B205F9B1A7306F3001D4D09 /* SlideOutMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideOutMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B205F9F1A7306F3001D4D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B205FA01A7306F3001D4D09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B205FA21A7306F3001D4D09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B205FA51A7306F3001D4D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B205FA71A7306F3001D4D09 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2B205FAA1A7306F3001D4D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2B205FB01A7306F3001D4D09 /* SlideOutMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideOutMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B205FB51A7306F3001D4D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B205FB61A7306F3001D4D09 /* SlideOutMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutMenuTests.swift; sourceTree = "<group>"; };
+		2B205FC01A7308C1001D4D09 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		2B205FC21A730B9C001D4D09 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		2B205FC41A7316C3001D4D09 /* SchemaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +82,12 @@
 			isa = PBXGroup;
 			children = (
 				2B205FA01A7306F3001D4D09 /* AppDelegate.swift */,
-				2B205FA21A7306F3001D4D09 /* ViewController.swift */,
+				2B205FC01A7308C1001D4D09 /* ContainerViewController.swift */,
+				2B205FC41A7316C3001D4D09 /* SchemaViewController.swift */,
+				2B205FC21A730B9C001D4D09 /* LeftViewController.swift */,
 				2B205FA41A7306F3001D4D09 /* Main.storyboard */,
-				2B205FA71A7306F3001D4D09 /* Images.xcassets */,
 				2B205FA91A7306F3001D4D09 /* LaunchScreen.xib */,
+				2B205FA71A7306F3001D4D09 /* Images.xcassets */,
 				2B205F9E1A7306F3001D4D09 /* Supporting Files */,
 			);
 			path = SlideOutMenu;
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B205FA31A7306F3001D4D09 /* ViewController.swift in Sources */,
+				2B205FC31A730B9C001D4D09 /* LeftViewController.swift in Sources */,
+				2B205FC51A7316C3001D4D09 /* SchemaViewController.swift in Sources */,
+				2B205FC11A7308C1001D4D09 /* ContainerViewController.swift in Sources */,
 				2B205FA11A7306F3001D4D09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
